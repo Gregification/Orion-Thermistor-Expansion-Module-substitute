@@ -1,10 +1,11 @@
-.metadata/
-Release/*
-.xdchelp
-config/*
-.launches/*
-.jxbrowser*
-Debug/*
-.prefs
-.metadata/
-RemoteSystemsTempFiles/
+# CCS
+*.metadata/
+*Release/*
+*.xdchelp
+*config/*
+*.launches/*
+*.jxbrowser*
+*Debug/*
+*.prefs
+*.metadata/
+*RemoteSystemsTempFiles/
