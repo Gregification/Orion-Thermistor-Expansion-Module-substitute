@@ -31,6 +31,6 @@ void CAN1setMsg(uint8_t msgBlk, uint64_t * data);
 /*
  * The message objects are numbered from 1 to 32. 0 also maps to 32.
  */
-void CAN1readMsg(uint8_t msgBlk, uint64_t * data);
+void CAN1getMsg(uint8_t msgBlk, uint64_t * data);
 
 #endif /* SRC_CAN1_H_ */

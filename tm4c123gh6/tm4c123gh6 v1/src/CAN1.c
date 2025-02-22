@@ -145,7 +145,7 @@ void CAN1setBaud(uint32_t baudrate, uint32_t clock_freq){
     CAN1_CTL_R &= ~(CAN_CTL_INIT);  // stop init
 }
 
-void CAN1setMsgData(uint8_t messageBlock, uint64_t * data){
+void CAN1setMsg(uint8_t messageBlock, uint64_t * data){
     while(CAN1_IF2CRQ_R | CAN_IF2CRQ_BUSY){
         // wait
     }
@@ -164,6 +164,6 @@ void CAN1setMsgData(uint8_t messageBlock, uint64_t * data){
     CAN1_IF2CMSK_R |= CAN_IF1CMSK_WRNRD;
 }
 
-void CAN1readMsg(uint8_t messageBlock, uint64_t * data){
+void CAN1getMsg(uint8_t messageBlock, uint64_t * data){
 
 }
